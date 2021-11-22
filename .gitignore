@@ -1,0 +1,13 @@
+.envrc*
+*.output
+.ssh
+
+# Terraform
+.terraform/
+**/.terraform/
+**/terraform.tfstate.*
+**/terraform.tfstate
+**/.terraform.tfstate.lock.info
+**/.terraform.lock.hcl
+**/*.plan
+**/output/

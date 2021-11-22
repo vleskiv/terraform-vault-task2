@@ -48,7 +48,7 @@ module "approle" {
   }
   EOT
 
-  create_secret_id = false
+  create_secret_id = true
   template_path   = "templates/secret-value.json.tpl"
   vault_addr = var.vault_addr
 }
