@@ -38,7 +38,7 @@ locals {
 # Module
 #-------------------------------
 module "approle" {
-  source = "../terraform-vault-approle"
+  source = "github.com/vleskiv/terraform-vault-approle.git"
 
   role_name   = "${local.base_name}-role"
   policy_name = "${local.base_name}-policy"
