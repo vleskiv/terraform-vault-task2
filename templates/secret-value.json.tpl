@@ -1,0 +1,1 @@
+{"url":"${vault_url}","${name_roleid}":"${value_roleid}"%{if create_secret_id==true},"${name_secretid}":"${value_secretid}"%{ endif }}

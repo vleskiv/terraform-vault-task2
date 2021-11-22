@@ -1,0 +1,13 @@
+# Example for "terraform remote state data"
+data "terraform_remote_state" "remote" {
+  backend = "gcs"
+  config = {
+    bucket  = "tf-state"
+    prefix  = "dev"
+  }
+}
+
+locals {
+  // base prefix for resources
+  base_name = data.terraform_remote_state.remote.somename
+}
